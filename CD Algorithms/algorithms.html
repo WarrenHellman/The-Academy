@@ -2022,52 +2022,52 @@
 
         // { Name: "Beer", Price: 1 }
         // Build me a shopping cart.  three methods addItem, removeItem, totalPrice.
-        function Item(name, price){
-            this.name=name;
-            this.price=price;
-        }
+        // function Item(name, price){
+        //     this.name=name;
+        //     this.price=price;
+        // }
         
-        function Shopping(){
-            var shoppingList=[];
-            this.addItem = function(item){
-                shoppingList.push(item);
-                return shoppingList;
-            };
-            this.removeItem = function(name){
-                for (var i=0; i<shoppingList.length; i++){
-                    if (shoppingList[i]['name']==name){
-                    shoppingList.splice(i,1)
-                    return shoppingList;
-                    }
-                    else{ continue;}
-                }
+        // function Shopping(){
+        //     var shoppingList=[];
+        //     this.addItem = function(item){
+        //         shoppingList.push(item);
+        //         return shoppingList;
+        //     };
+        //     this.removeItem = function(name){
+        //         for (var i=0; i<shoppingList.length; i++){
+        //             if (shoppingList[i]['name']==name){
+        //             shoppingList.splice(i,1)
+        //             return shoppingList;
+        //             }
+        //             else{ continue;}
+        //         }
             
-            }
-            this.totalPrice = function(){
-                var total=0
-                for (var j=0; j<shoppingList.length; j++){
-                    total+=shoppingList[j]['price']
-                }
-                return total;
-            }    
+        //     }
+        //     this.totalPrice = function(){
+        //         var total=0
+        //         for (var j=0; j<shoppingList.length; j++){
+        //             total+=shoppingList[j]['price']
+        //         }
+        //         return total;
+        //     }    
             
             
 
-        }
-        list = new Shopping();
-        var item1 = new Item('Brush', 3);
-        var item2 = new Item('Shoe', 40);
-        var item3 = new Item('Guitar', 140);
-        var item4 = new Item('Toy', 6);
+        // }
+        // list = new Shopping();
+        // var item1 = new Item('Brush', 3);
+        // var item2 = new Item('Shoe', 40);
+        // var item3 = new Item('Guitar', 140);
+        // var item4 = new Item('Toy', 6);
 
-        list.addItem(item1)
-        list.addItem(item2)
-        list.addItem(item3)
-        list.addItem(item4)
+        // list.addItem(item1)
+        // list.addItem(item2)
+        // list.addItem(item3)
+        // list.addItem(item4)
 
-        list.totalPrice();
-        list.removeItem('Guitar');
-        list.totalPrice();
+        // list.totalPrice();
+        // list.removeItem('Guitar');
+        // list.totalPrice();
         
         
             
